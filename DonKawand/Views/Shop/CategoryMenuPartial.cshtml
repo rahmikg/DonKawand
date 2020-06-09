@@ -1,0 +1,13 @@
+﻿@model IEnumerable<DonKawand.Models.ViewModels.Shop.CategoryVM>
+
+<h3>Items for Sale</h3>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li><a style="font-size:20px; " href="/shop/category/@item.Slug.ToLower()">@item.Name</a></li>
+    }
+</ul>
+
+
+

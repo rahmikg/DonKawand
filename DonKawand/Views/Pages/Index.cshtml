@@ -1,0 +1,11 @@
+﻿@model DonKawand.Models.ViewModels.Pages.PageVM
+
+@{
+    ViewBag.Title = ViewBag.PageTitle;
+    TempData["PageTitle"] = ViewBag.PageTitle;
+}
+<h2>@ViewBag.PageTitle</h2>
+    
+
+@Html.Raw(Model.Body)
+
